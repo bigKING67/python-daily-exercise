@@ -1,0 +1,54 @@
+{
+  "exercise_id": "001",
+  "exercise_name": "Array Diff",
+  "function_name": "array_diff",
+  "description": "数组差集计算",
+  "author": "Daily Exercise",
+  "test_cases": [
+    {
+      "id": 1,
+      "description": "array_diff([\"apple\", \"banana\"], [\"apple\", \"banana\", \"cherry\"]) should return [\"cherry\"]",
+      "input": {
+        "arr1": ["apple", "banana"],
+        "arr2": ["apple", "banana", "cherry"]
+      },
+      "expected": ["cherry"]
+    },
+    {
+      "id": 2,
+      "description": "array_diff([\"apple\", \"banana\", \"cherry\"], [\"apple\", \"banana\"]) should return [\"cherry\"]",
+      "input": {
+        "arr1": ["apple", "banana", "cherry"],
+        "arr2": ["apple", "banana"]
+      },
+      "expected": ["cherry"]
+    },
+    {
+      "id": 3,
+      "description": "array_diff([\"one\", \"two\", \"three\", \"four\", \"six\"], [\"one\", \"three\", \"eight\"]) should return [\"eight\", \"four\", \"six\", \"two\"]",
+      "input": {
+        "arr1": ["one", "two", "three", "four", "six"],
+        "arr2": ["one", "three", "eight"]
+      },
+      "expected": ["eight", "four", "six", "two"]
+    },
+    {
+      "id": 4,
+      "description": "array_diff([\"two\", \"four\", \"five\", \"eight\"], [\"one\", \"two\", \"three\", \"four\", \"seven\", \"eight\"]) should return [\"five\", \"one\", \"seven\", \"three\"]",
+      "input": {
+        "arr1": ["two", "four", "five", "eight"],
+        "arr2": ["one", "two", "three", "four", "seven", "eight"]
+      },
+      "expected": ["five", "one", "seven", "three"]
+    },
+    {
+      "id": 5,
+      "description": "array_diff([\"I\", \"like\", \"freeCodeCamp\"], [\"I\", \"like\", \"rocks\"]) should return [\"freeCodeCamp\", \"rocks\"]",
+      "input": {
+        "arr1": ["I", "like", "freeCodeCamp"],
+        "arr2": ["I", "like", "rocks"]
+      },
+      "expected": ["freeCodeCamp", "rocks"]
+    }
+  ]
+}

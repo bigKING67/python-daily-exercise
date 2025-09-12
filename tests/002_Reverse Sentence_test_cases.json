@@ -1,0 +1,46 @@
+{
+  "exercise_id": "002",
+  "exercise_name": "Reverse Sentence",
+  "function_name": "reverse_sentence",
+  "description": "句子单词顺序反转",
+  "author": "Daily Exercise",
+  "test_cases": [
+    {
+      "id": 1,
+      "description": "reverse_sentence(\"world hello\") should return \"hello world\"",
+      "input": {
+        "sentence": "world hello"
+      },
+      "expected": "hello world"
+    },
+    {
+      "id": 2,
+      "description": "reverse_sentence(\"push commit git\") should return \"git commit push\"",
+      "input": {
+        "sentence": "push commit git"
+      },
+      "expected": "git commit push"
+    },
+    {
+      "id": 3,
+      "description": "reverse_sentence(\"npm  install   apt    sudo\") should return \"sudo apt install npm\"",
+      "input": {
+        "sentence": "npm  install   apt    sudo"
+      },
+      "expected": "sudo apt install npm"
+    },
+    {
+      "id": 4,
+      "description": "reverse_sentence(\"import    default   function  export\") should return \"export function default import\"",
+      "input": {
+        "sentence": "import    default   function  export"
+      },
+      "expected": "export function default import"
+    }
+  ],
+  "hints": [
+    "考虑使用字符串的split和join方法",
+    "注意处理多个连续空格的情况",
+    "不带参数的split()方法能很好地处理多个空格"
+  ]
+}

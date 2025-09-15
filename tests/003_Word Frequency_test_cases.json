@@ -1,0 +1,64 @@
+ {
+  "exercise_id": "003",
+  "exercise_name": "Word Frequency",
+  "function_name": "get_words",
+  "description": "返回段落中出现频率最高的前三个单词",
+  "author": "Daily Exercise",
+  "test_cases": [
+    {
+      "id": 1,
+      "description": "get_words(\"Coding in Python is fun because coding Python allows for coding in Python easily while coding\") should return [\"coding\", \"python\", \"in\"]",
+      "input": {
+        "paragraph": "Coding in Python is fun because coding Python allows for coding in Python easily while coding"
+      },
+      "expected": ["coding", "python", "in"]
+    },
+    {
+      "id": 2,
+      "description": "get_words(\"I like coding. I like testing. I love debugging!\") should return [\"i\", \"like\", \"coding\"]",
+      "input": {
+        "paragraph": "I like coding. I like testing. I love debugging!"
+      },
+      "expected": ["i", "like", "coding"]
+    },
+    {
+      "id": 3,
+      "description": "get_words(\"Debug, test, deploy. Debug, debug, test, deploy. Debug, test, test, deploy!\") should return [\"debug\", \"test\", \"deploy\"]",
+      "input": {
+        "paragraph": "Debug, test, deploy. Debug, debug, test, deploy. Debug, test, test, deploy!"
+      },
+      "expected": ["debug", "test", "deploy"]
+    },
+    {
+      "id": 4,
+      "description": "get_words(\"\") should return []",
+      "input": {
+        "paragraph": ""
+      },
+      "expected": []
+    },
+    {
+      "id": 5,
+      "description": "get_words(\"hello world\") should return [\"hello\", \"world\"]",
+      "input": {
+        "paragraph": "hello world"
+      },
+      "expected": ["hello", "world"]
+    },
+    {
+      "id": 6,
+      "description": "get_words(\"apple, apple, apple! banana banana. cherry\") should return [\"apple\", \"banana\", \"cherry\"]",
+      "input": {
+        "paragraph": "apple, apple, apple! banana banana. cherry"
+      },
+      "expected": ["apple", "banana", "cherry"]
+    }
+  ],
+  "hints": [
+    "考虑使用字典来统计词频",
+    "注意处理标点符号（逗号、句号、感叹号）",
+    "将所有单词转换为小写进行统计",
+    "使用sorted函数按频率排序",
+    "注意处理多个连续空格的情况"
+  ]
+}
